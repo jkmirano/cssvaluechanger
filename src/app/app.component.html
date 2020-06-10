@@ -1,0 +1,19 @@
+<h1>How to Change CSS values with Angular9</h1>
+
+<input type="text" [(ngModel)]="textColor" placeholder="Text Color"><br>
+<input type="text" [(ngModel)]="backgroundColor" placeholder="Background Color"><br>
+<input type="text" [(ngModel)]="borderColor" placeholder="Border Color"><br>
+<input type="text" [(ngModel)]="borderWidth" placeholder="Border Width"><br>
+<input type="text" [(ngModel)]="height" placeholder="Height"><br>
+<input type="text" [(ngModel)]="width" placeholder="Width"><br>
+<input type="text" [(ngModel)]="textAlignment" placeholder="Text Alignment"><br><br>
+
+<app-button
+  color="{{ textColor }}"
+  bgColor="{{ backgroundColor }}"
+  borderColor="{{ borderColor }}"
+  borderWidth="{{ borderWidth }}"
+  height="{{ height }}"
+  width="{{ width }}"
+  textAlignment="{{ textAlignment }}"
+></app-button>
